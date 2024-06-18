@@ -1,0 +1,75 @@
+.title {
+    color: #1930e0;
+    font-style: italic;
+    margin-bottom: 30cm;
+    margin-trim: 20cm;
+    margin-right: 10cqb;
+    text-align: center;
+    text-shadow: #48348b;
+    
+}
+
+.title:hover {
+    color: #8b3471; 
+    transform: scale(3.1); 
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8b3434;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(127, 255, 168);
+    
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 16px;
+}
+
+.book-card {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    row-gap: 20px;
+}
+
+.book-card:hover {
+    transform: scale(1.25);
+}
+
+.book-cover {
+    width: 110%;
+    height: auto;
+   
+}
+
+.book-details {
+    padding: 20px;
+
+}
+
+.book-title {
+    font-size: 1.6em;
+    margin: 0 0 10px;
+    caret-color: rgb(0, 191, 255);
+}
+
+.book-genre, .book-author, .book-language {
+    margin: 4px 0;
+    color: #555;
+}
+
+.book-genre strong, .book-author strong, .book-language strong {
+    color: #333;
+}

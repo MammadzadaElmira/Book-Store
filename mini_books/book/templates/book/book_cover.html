@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/book/style.css">
+</head>
+<body>
+    <h1 class="title">BOOK STORE</h1>
+    <div class="container">
+        {% for book in BOOKS %}
+        <div class="book-card">
+            <img src="{{ book.get_thumbnail_photo_url }}" alt="Book Cover" class="book-cover">
+            <div class="book-details">
+                <h2 class="book-title">{{book.title}}</h2>
+                <p class="book-genre"><strong>Genre: {{book.genre}}</strong></p>
+                <p class="book-author"><strong>Author: {{book.author}}</strong></p>
+                <p class="book-language"><strong>Language: {{book.language}}</strong></p>
+            </div>
+        </div>
+        {% endfor %}
+</body>
+</html>
